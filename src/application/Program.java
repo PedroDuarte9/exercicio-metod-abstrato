@@ -46,11 +46,11 @@ public class Program {
         System.out.println("Taxes Paid");
         for (TaxPayer t: list) {
             double tax = t.tax();
-            System.out.printf("%.2f%n",t.getName() + " " + t.tax());
+            System.out.printf("$ %.2f%n", t.tax());
 
             sum += t.tax();
-            System.out.printf("%.2f%n", sum);
         }
+        System.out.printf("Total Taxes $ %.2f%n", sum);
 
         sc.close();
     }
