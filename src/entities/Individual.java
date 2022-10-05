@@ -7,10 +7,6 @@ public class Individual extends TaxPayer {
 
     }
 
-    public Individual(Double healthExpenditures) {
-        this.healthExpenditures = healthExpenditures;
-    }
-
     public Individual(String name, Double annualIncome, Double healthExpenditures) {
         super(name, annualIncome);
         this.healthExpenditures = healthExpenditures;
